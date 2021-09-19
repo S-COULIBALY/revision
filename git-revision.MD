@@ -4,9 +4,22 @@
 
 `git init`
 `git add .` ou `git add -A`
+`git rm --cached <nom-du-fichier>` => retire les fichier en question de la zone de surveillance avant le commit
+
+`git restore <file>` => pour annuler les modifications dans le répertoire de travail
+`git restore --staged <file>` => met notre branche est à jour avec ce qui est sur "origin/master (un retour en arrière sur l'ancien commit)
+
 `git status`
-`git rm --cached node_module` => retire node_module de la zone de surveillance
+
+`git restore --staged <file>` => rétirer de la zone de surveillance
 `git commit -m "initial commit`
+`git commit -a "initial commit` => fait le `add` er le `commit` en même temps
+
+`git commit --amend -m "an updated commit message"` => pour modifier le message de commit sans changer son instantané
+
+`git log` => liste tous commit
+ou
+`git log --graph --oneline --all` => liste tous commit
 
 ##### Configuration de git
 
@@ -45,7 +58,7 @@
 
 - `git checkout <nom_fichier>` => permet aussi de remettre un fichier local dans le même état que sur la branche distante
 
-##### Git fetch (une partie)
+##### Git fetch (la difference / en opposition avec git clone où on réccupère tout d'un nouveau repo distant)
 
 - on peut récupérer les commits distants absents du dépôt local
 - ne déplace pas le tag HEAD
