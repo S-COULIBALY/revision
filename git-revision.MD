@@ -34,13 +34,13 @@
 
 ##### Configuration de git
 
-- Définir les informations utiles à git au niveau du système (user.name, user.email)
+- Définir les informations utiles à git au niveau du système (user.name, user.email)<br>
   `git config --global user.email "s.coulibaly@outlook.com"`<br>
   `git config --global user.name "S-COULIBALY"`<br>
 
-- on peut s'en servir pour définir des raccourcis de commandes
-  `git config --global alias.<nom_raccourci> <commande> [options]` 'sans le mot git'
-  `git config --global alias.tree 'log --graph --oneline --all'`
+- on peut s'en servir pour définir des raccourcis de commandes<br>
+  `git config --global alias.<nom_raccourci> <commande> [options]` 'sans le mot git'<br>
+  `git config --global alias.tree 'log --graph --oneline --all'`<br>
 
 ##### Création du pont entre le depot local et Github
 
