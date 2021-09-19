@@ -9,22 +9,22 @@
   --changement ....<br>
   -- et <br>
 
-- Vérifier 1ère fois l'état du projet et si problème revenir en arrière en annulant les modification de la `zone de travail`
-  `git status`
+- Vérifier 1ère fois l'état du projet et si problème revenir en arrière en annulant les modification de la `zone de travail`<br>
+  `git status`<br>
   `git restore <file>` => pour annuler les modifications dans le répertoire de travail(working directory) avant le `add du stage`<br>
 
-- Ajouter les modifications à la zone et si problème revenir en arrière en annulant les modification de la `zone de stage`
+- Ajouter les modifications à la zone et si problème revenir en arrière en annulant les modification de la `zone de stage`<br>
   `git add .` ou `git add -A`<br>
   `git status`<br>
   `git restore --staged <file>` => désindexe les changements de la zone de stage<br>
   `git rm --cached <nom-du-fichier>` => retire le fichier en indexer de la zone de surveillance avant le commit<br>
 
-- Faire un commit
+- Faire un commit<br>
   `git commit -m "initial commit`<br>
   `git commit -a -m "initial commit` => fait le `add` er le `commit` en même temps<br>
   `git commit --amend -m "an updated commit message"` => pour modifier le message de commit sans changer son instantané<br>
 
-- Lister tous commit
+- Lister tous commit<br>
   `git log`<br>
   ou<br>
   `git log --graph --oneline --all` => liste tous commit de manière pretty<br>
@@ -71,12 +71,12 @@
 
 ##### Git fetch (ne deplace pas le HEAD)
 
-- Récupère les commits distants absents du dépôt local / en opposition avec `git clone` qui réccupère tout d'un repo distant
-  `git fetch origin` => Il faut ensuite merge + commit
+- Récupère les commits distants absents du dépôt local / en opposition avec `git clone` qui réccupère tout d'un repo distant<br>
+  `git fetch origin` => Il faut ensuite merge + commit<br>
 
 ##### Git pull (deplace le HEAD)
 
-- pull = fecth + merge => il faut ensuite commit
+- pull = fecth + merge => il faut ensuite commit<br>
   `git pull` => synchronise le repertoire de travail avec le repo distant et deplace le HEAD<br>
 
 ##### Git merge
